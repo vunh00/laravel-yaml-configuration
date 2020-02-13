@@ -1,11 +1,11 @@
 {
-    "name": "devitek/yaml-configuration",
+    "name": "vunh00/yaml-configuration",
     "license": "MIT",
     "description": "Add YAML file support to Laravel Configuration",
     "authors": [
         {
-            "name": "Thomas SIEFFERT",
-            "email": "thomas.sieffert@devitek.fr"
+            "name": "Vu NH",
+            "email": "vunh00@cucsoc.com"
         }
     ],
     "require": {
@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Devitek\\": "src/Devitek"
+            "Vunh00\\": "src/Vunh00"
         }
     },
     "minimum-stability": "stable"
