@@ -1,13 +1,19 @@
 # Add Yaml file support for Laravel 5.2 Configuration
 
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/19295896-b70b-43de-8476-b03d41fe7c82/mini.png)](https://insight.sensiolabs.com/projects/19295896-b70b-43de-8476-b03d41fe7c82) 
+[![Latest Stable Version](https://poser.pugx.org/devitek/yaml-configuration/v/stable)](https://packagist.org/packages/devitek/yaml-configuration)
+[![Total Downloads](https://poser.pugx.org/devitek/yaml-configuration/downloads)](https://packagist.org/packages/devitek/yaml-configuration)
+[![Latest Unstable Version](https://poser.pugx.org/devitek/yaml-configuration/v/unstable)](https://packagist.org/packages/devitek/yaml-configuration)
+[![License](https://poser.pugx.org/devitek/yaml-configuration/license)](https://packagist.org/packages/devitek/yaml-configuration)
+
 This package uses Symfony/Yaml parser.
 
 ## Installing
 
-Add ```"vunh00/yaml-configuration": "3.1.*"``` to your **composer.json** by running :
+Add ```"devitek/yaml-configuration": "3.1.*"``` to your **composer.json** by running :
 
 ```
-php composer.phar require vunh00/yaml-configuration
+php composer.phar require devitek/yaml-configuration
 ```
 
 And select version : ```3.1.*```
@@ -19,7 +25,7 @@ You have to add (or merge)
 ```php
 protected function bootstrappers()
 {
-    $this->bootstrappers[] = 'Vunh00\Core\Config\LoadYamlConfiguration';
+    $this->bootstrappers[] = 'Devitek\Core\Config\LoadYamlConfiguration';
     return $this->bootstrappers;
 }
 ```
@@ -61,5 +67,3 @@ something: %sprintf:hell %s,world%
 ```
 
 Enjoy it ! Feel free to fork :) !
-
-This package is fork of devitek/yaml-configuration

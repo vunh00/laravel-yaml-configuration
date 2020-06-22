@@ -1,6 +1,6 @@
 <?php
 
-namespace Vunh00\Core\Config;
+namespace Devitek\Core\Config;
 
 use Illuminate\Contracts\Config\Repository;
 use Illuminate\Contracts\Foundation\Application;
@@ -137,7 +137,7 @@ class LoadYamlConfiguration extends LoadConfiguration
             array_walk_recursive($content, [$this, 'parseValues']);
 
             if (!file_exists($cachedir)) {
-                @mkdir($cachedir, 0777);
+                @mkdir($cachedir, 0755);
             }
 
             file_put_contents($cachefile, "<?php" . PHP_EOL . PHP_EOL . "return " . var_export($content, true) . ";");
